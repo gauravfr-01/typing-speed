@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Speed Test</h1>
+        <div id="text-display" class="text-display">
+            Loading text...
+        </div>
+        <input
+            type="text"
+            id="typing-input"
+            class="typing-input"
+            placeholder="Click Start to begin!"
+            disabled
+        >
+        <div class="controls-panel">
+            <div id="timer-display" class="timer-display">
+                Time: 0s
+            </div>
+            <div class="button-group">
+                <button
+                    id="start-button"
+                    class="start-button"
+                >
+                    Start Test
+                </button>
+                <button
+                    id="reset-button"
+                    class="reset-button"
+                >
+                    Reset
+                </button>
+            </div>
+        </div>
+        <div id="results-panel" class="results-panel hidden">
+            <h2>Results</h2>
+            <p>Words Per Minute (WPM): <span id="wpm-display">0</span></p>
+            <p>Accuracy: <span id="accuracy-display">0%</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
